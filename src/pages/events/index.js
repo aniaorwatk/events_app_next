@@ -1,3 +1,5 @@
+
+
 const EventsPage = ({ data }) => {
 
     const eventsCities = data.map(ev => {
