@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={"events/[cat]/[id].js -> ./../../../../data/data.json":{"id":"events/[cat]/[id].js -> ./../../../../data/data.json","files":["static/chunks/data_data_json.js"]},"events/[cat]/index.js -> ./../../../../data/data.json":{"id":"events/[cat]/index.js -> ./../../../../data/data.json","files":["static/chunks/data_data_json.js"]}}
+self.__REACT_LOADABLE_MANIFEST={}

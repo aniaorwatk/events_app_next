@@ -1,21 +1,24 @@
 import Image from 'next/image'
+import Link from "next/link";
 
-const EventsCatPage = ({ data }) => {
+const EventsCatPage = ({ data, pageName }) => {
     return (
         <div>
-            <h1>{data.city}</h1>
+            <h1>Events in {pageName}</h1>
             {data.map(ev => {
                 return (
-                    <a key={ev.id} href={`/events/${ev.city}/${ev.id}`}>
-                        <Image
-                            src={ev.image}
-                            alt={ev.title}
-                            width={200}
-                            height={200}
-                        />
-                        <h2>{ev.title}</h2>
-                   <p>{ev.description}</p>
-                    </a>
+                    <div>
+                        <Link key={ev.id} href={`/events/${ev.city}/${ev.id}`} passHref>
+                                <Image
+                                    src={ev.image}
+                                    alt={ev.title}
+                                    width={200}
+                                    height={200}
+                                />
+                                <h2>{ev.title}</h2>
+                                <p>{ev.description}</p>
+                        </Link>
+                    </div>
                 )
             })}
         </div>
@@ -47,8 +50,8 @@ export async function getServerSideProps(context) {
     const data = allEvents.filter(ev => ev.city === id)
 
     return {
-        props: {
-            data
-        }
+        props:
+            { data, pageName: id }
+
     }
 }
