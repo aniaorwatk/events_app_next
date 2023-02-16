@@ -5,3 +5,9 @@
     padding: 15px;
     min-height: 400px;
 }
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

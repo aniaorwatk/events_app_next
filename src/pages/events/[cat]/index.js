@@ -1,27 +1,11 @@
-import Image from 'next/image'
-import Link from "next/link";
+import CatEvents from '@/components/eventsComponents/catEvents';
 
 const EventsCatPage = ({ data, pageName }) => {
     return (
-        <div>
-            <h1>Events in {pageName}</h1>
-            {data.map(ev => {
-                return (
-                    <div>
-                        <Link key={ev.id} href={`/events/${ev.city}/${ev.id}`} passHref>
-                                <Image
-                                    src={ev.image}
-                                    alt={ev.title}
-                                    width={200}
-                                    height={200}
-                                />
-                                <h2>{ev.title}</h2>
-                                <p>{ev.description}</p>
-                        </Link>
-                    </div>
-                )
-            })}
-        </div>
+        <CatEvents
+            data={data}
+            pageName={pageName}
+        />
     )
 }
 
