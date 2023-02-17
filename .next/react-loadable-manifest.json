@@ -1,14 +1,1 @@
-{
-  "events/[cat]/[id].js -> ./../../../../data/data.json": {
-    "id": "events/[cat]/[id].js -> ./../../../../data/data.json",
-    "files": [
-      "static/chunks/data_data_json.js"
-    ]
-  },
-  "events/[cat]/index.js -> ./../../../../data/data.json": {
-    "id": "events/[cat]/index.js -> ./../../../../data/data.json",
-    "files": [
-      "static/chunks/data_data_json.js"
-    ]
-  }
-}
+{}

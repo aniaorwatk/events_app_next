@@ -22,7 +22,6 @@ export default function Home({ data }) {
 
 export async function getServerSideProps() {
 
-  // const data = await import ('./../../data/data.json');
   const { events_categories } = await import('./../../data/data.json');
 
   return {
