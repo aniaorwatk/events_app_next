@@ -12,6 +12,7 @@ const CatEvents = ({ data, pageName }) => {
 
                         <Link className={style.card} key={ev.id} href={`/events/${ev.city}/${ev.id}`} passHref>
                             <Image
+                                priority
                                 src={ev.image}
                                 alt={ev.title}
                                 width={300}

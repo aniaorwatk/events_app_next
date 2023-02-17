@@ -3,13 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-const Events = ({data}) => {
+const Events = ({ data }) => {
 
 
     const eventsCities = data.map(ev => {
         return (
             <Link className={style.card} key={ev.id} href={`/events/${ev.id}`} passHref>
                 <Image
+                    priority
                     src={ev.image}
                     alt={ev.title}
                     width={200}
