@@ -1,0 +1,15 @@
+.aboutUs{
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+gap:15px;
+padding: 40px;
+text-align: justify;
+}
+.ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 15px;
+    gap:20px;
+}

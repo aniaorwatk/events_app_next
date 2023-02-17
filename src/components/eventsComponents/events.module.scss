@@ -1,0 +1,52 @@
+.eventsPage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .card {
+        position: relative;
+
+        h2 {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 20px black;
+        }
+    }
+}
+
+.catEvents {
+    width: 100%;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:15px;
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+      
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            gap:10px;
+        }
+    }
+}
+
+.idEvents{
+    width: 100%;
+    flex-wrap: wrap;
+
+}

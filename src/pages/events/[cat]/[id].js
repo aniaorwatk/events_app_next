@@ -1,17 +1,8 @@
-import Image from "next/image"
+import IdEvents from "@/components/eventsComponents/idEvents";
 
 const EventPage = ({ data }) => {
     return (
-        <div>
-            <Image
-                src={data.image}
-                alt={data.title}
-                width={1000}
-                height={500}
-            />
-            <h1>{data.title}</h1>
-            <p>{data.description}</p>
-        </div>
+        <IdEvents data={data} />
     )
 }
 
@@ -20,8 +11,6 @@ export default EventPage
 export async function getstaticPaths() {
     const data = await import('./../../../../data/data.json');
     const allEvents = data
-
-
 
     const allPaths = allEvents.map(path => {
         return {

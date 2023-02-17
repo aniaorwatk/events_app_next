@@ -1,0 +1,25 @@
+.homePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:50px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap:30px;
+
+}
+.card:nth-child(even){
+   direction:rtl;
+}
+.content{
+    color: antiquewhite;
+}
+
+.image{
+   width: 50%; 
+}
