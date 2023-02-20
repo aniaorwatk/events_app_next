@@ -22,17 +22,19 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies: 
+REACT • HTML5 • SCSS • JS • NEXT • API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Libraries: 
+Next • React Hook
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## About the project: 
+This is a simple application built on the basis of a tutorial. The application uses slightly different things than in the tutorial. • The application is flex • Each page takes something different • This is a page that contains static and dynamic pages.
+ • The application uses methods such as map, filter, find, etc.
 
-## Deploy on Vercel
+## Solutions in the project: 
+On the main page, an image is displayed via the API from the NASA page • I used Redux to display the quiz and score points I use reusable containers and components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Assets: 
+Free photos from the internet • Icon from fontawesome.com • Font from fonts.google.com
