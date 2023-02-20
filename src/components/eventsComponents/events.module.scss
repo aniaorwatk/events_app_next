@@ -23,10 +23,10 @@
 .catEvents {
     width: 100%;
     display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap:15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 
     .content {
         display: flex;
@@ -34,19 +34,60 @@ gap:15px;
         justify-content: center;
         gap: 50px;
         width: 100%;
-      
 
         .card {
             display: flex;
             flex-direction: column;
             max-width: 300px;
-            gap:10px;
+            gap: 10px;
         }
     }
 }
 
-.idEvents{
+.idEvents {
     width: 100%;
-    flex-wrap: wrap;
+    column-gap:50px;
 
+    .email_registration {
+        margin-top: 15px;
+
+        label {
+            display: flex;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-top: 25px;
+        }
+
+        .input {
+            height: 40px;
+            min-width: 230px;
+            border-radius: 5px;
+            border: 1px solid rgb(106, 156, 106);
+            font-size: 20px;
+        }
+
+        button{
+            height: 40px;
+            min-width: 80px;
+            border-radius: 5px;
+            border: 1px solid rgb(106, 156, 106);
+            background-color: rgb(108, 167, 147);
+            text-transform: uppercase;
+            margin-left: 5px;
+            font-size: 20px;
+            padding: 0px 5px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover{
+                background-color: rgb(106, 156, 106);
+            }
+        }
+    }
+}
+
+.errorMessage{
+    color:rgb(198, 58, 58)
 }

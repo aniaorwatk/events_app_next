@@ -8,12 +8,13 @@ export const HomePage = ({ data }) => {
     return (
       <Link className={style.card} key={ev.id} href={`/events/${ev.id}`} passHref>
         <div className={style.image}>
-        <Image
-          src={ev.image}
-          alt={ev.title}
-          width={300}
-          height={200}
-        />          
+          <Image
+            priority
+            src={ev.image}
+            alt={ev.title}
+            width={300}
+            height={200}
+          />
         </div>
         <div className={style.content}>
           <h2>{ev.title}</h2>
