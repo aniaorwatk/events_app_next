@@ -2,9 +2,7 @@ import style from "./events.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-
 const Events = ({ data }) => {
-
 
     const eventsCities = data.map(ev => {
         return (
